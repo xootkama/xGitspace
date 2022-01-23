@@ -15,4 +15,6 @@ lib32z1-dev  liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev \
 libxml2 libxml2-utils lzop pngcrush rsync  yasm zip cp repo zlib1g-dev \
 libtinfo5 libncurses5 neofetch -y
 
+RUN mkdir rom
+
 
