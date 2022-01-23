@@ -9,8 +9,22 @@ RUN echo Welcome to xyz Workspace Zone
 
 # Dependency
 RUN apt update && apt upgrade -y
-RUN sudo apt install openssh-server screen python git openjdk-8-jdk android-tools-adb bc bison \
-build-essential curl flex g++-multilib gcc-multilib gnupg gperf imagemagick lib32ncurses-dev \
-lib32readline-dev lib32z1-dev  liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev \
-libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc yasm zip zlib1g-dev \
+RUN sudo apt install openssh-server screen python git  bc bison \
+build-essential curl  g++-multilib gcc-multilib  lib32ncurses-dev \
+lib32z1-dev  liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev \
+libxml2 libxml2-utils lzop pngcrush rsync  yasm zip zlib1g-dev \
 libtinfo5 libncurses5 neofetch -y
+
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+
+mkdir rom
+
+cd rom
+
+git config --global username "lol"
+git config --global user.email "lollol@gmail.com"
+
+repo init -u https://github.com/Fusion-OS/android_manifest -b twelve
+repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j$(nproc --all)
+
