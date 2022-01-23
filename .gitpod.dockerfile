@@ -15,7 +15,6 @@ lib32z1-dev  liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev \
 libxml2 libxml2-utils lzop pngcrush rsync  yasm zip zlib1g-dev \
 libtinfo5 libncurses5 neofetch -y
 
-mkdir -p ~/bin/repo
 cp ./repo ~/bin/repo
 chmod a+x ~/bin/repo
 
