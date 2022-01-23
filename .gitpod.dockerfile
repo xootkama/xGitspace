@@ -24,6 +24,5 @@ RUN git init
 
 
 RUN repo init -u https://github.com/Fusion-OS/android_manifest -b twelve
-RUN repo sync 
 
 
