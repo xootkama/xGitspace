@@ -20,6 +20,8 @@ RUN mkdir rom
 
 RUN cd rom
 
+RUN git init
+
 RUN git config  username "lol"
 RUN git config  user.email "lollol@gmail.com"
 
