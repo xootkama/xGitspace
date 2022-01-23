@@ -1,9 +1,6 @@
 # Fetch Ubuntu Latest
 FROM fr3akyphantom/droid-builder:focal
 
-# Root
-USER root
-
 # Start
 RUN echo Welcome to xyz Workspace Zone
 
