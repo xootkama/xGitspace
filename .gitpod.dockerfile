@@ -20,8 +20,8 @@ RUN mkdir rom
 
 RUN cd rom
 
-RUN git config --global username "lol"
-RUN git config --global user.email "lollol@gmail.com"
+RUN git config  username "lol"
+RUN git config  user.email "lollol@gmail.com"
 
 RUN repo init -u https://github.com/Fusion-OS/android_manifest -b twelve
 RUN repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j$(nproc --all)
