@@ -24,6 +24,6 @@ RUN git init
 
 
 RUN repo init -u https://github.com/Fusion-OS/android_manifest -b twelve
-RUN repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j$(nproc --all)
+RUN repo sync 
 
 
