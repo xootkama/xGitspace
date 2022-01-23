@@ -5,7 +5,7 @@ FROM fr3akyphantom/droid-builder:focal
 RUN echo Welcome to xyz Workspace Zone
 
 # Dependency
-RUN sudo apt update && apt upgrade -y
+RUN sudo apt update && sudo apt upgrade -y
 RUN sudo apt install openssh-server screen python git  bc bison \
 build-essential curl  g++-multilib gcc-multilib  lib32ncurses-dev \
 lib32z1-dev  liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev \
