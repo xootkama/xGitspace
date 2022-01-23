@@ -1,5 +1,5 @@
 # Fetch Ubuntu Latest
-FROM gitpod/workspace-full:latest
+FROM fr3akyphantom/droid-builder:focal
 
 # Root
 USER root
